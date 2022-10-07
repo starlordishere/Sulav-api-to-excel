@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='lost.css')}}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    
+
+
+    <title>Excel Uploader</title>
+
+</head>
+<body>
+
+
+
+
+<main>
+  <center>
+    <p>Upload an excel file</p></center>
+ 
+  <p>text goes here</p>
+
+</center>
+</main>
+
+<center>
+
+<form method="POST" action="/excel" enctype="multipart/form-data" >
+    <dl>
+		<p>
+            <br><br>
+			Upload your excel file<br><br> 
+            <input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" class="btn btn-primary rounded-0" value="Submit">
+	</p>
+</form>
+
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+
+<br><br>
+<a href='/static/possum.jpg'>.</a>
+
+</center>
+
+
+<footer class="fixed_footer">
+  <div class="content">
+    <center>
+    <p>Copyright - Excel Upload</p>
+    </center>
+  </div>
+</footer>
+
+</body>
+</html>

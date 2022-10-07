@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": -75.6981,
+        "lat": 45.4112
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 301.95,
+        "feels_like": 302.55,
+        "temp_min": 300.79,
+        "temp_max": 303.14,
+        "pressure": 1014,
+        "humidity": 50
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 0.89,
+        "deg": 277,
+        "gust": 4.47
+    },
+    "clouds": {
+        "all": 64
+    },
+    "dt": 1660932631,
+    "sys": {
+        "type": 2,
+        "id": 2005537,
+        "country": "CA",
+        "sunrise": 1660903717,
+        "sunset": 1660953872
+    },
+    "timezone": -14400,
+    "id": 6094817,
+    "name": "Ottawa",
+    "cod": 200
+}
